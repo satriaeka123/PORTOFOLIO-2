@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EKA SATRIA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">ES</div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#skills">Keahlian</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-text">PORTFOLIO</div>
+    <div class="hero-content">
+      <p class="hero-label reveal">Full-Stack Developer & UI Designer</p>
+      <h1 class="hero-title reveal">
+        Halo, saya<br/>
+        <em>Eka Satria </em>
+      </h1>
+      <p class="hero-desc reveal">
+        Saya membangun pengalaman digital yang indah,<br class="desktop-only"/>
+        fungsional, dan berkesan.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+        <a href="#contact" class="btn btn-ghost">Hubungi Saya</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-label reveal">— 01 / Tentang Saya</div>
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <div class="about-img-wrap">
+            <div class="about-img-placeholder">ES</div>
+            <div class="about-img-deco"></div>
+          </div>
+        </div>
+        <div class="about-right">
+          <h2 class="section-title reveal">
+            Desainer sekaligus<br/><em>Developer</em>
+          </h2>
+          <p class="about-text reveal">
+            Saya berspesialisasi dalam membangun tim
+          </p>
+          <p class="about-text reveal">
+            Saya percaya bahwa kode yang bersih dan desain yang elegan bukan dua hal yang berbeda —
+            keduanya adalah dua sisi dari satu koin yang sama.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-label reveal">— 02 / Keahlian</div>
+      <h2 class="section-title reveal">Apa yang <em>Saya Kuasai</em></h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">⚡</div>
+          <h3>Web Programming</h3>
+          <p>HTML, CSS, JavaScript</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🔧</div>
+          <h3>Canva</h3>
+          <p>Design Poster, Banner dan proposal</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🗄️</div>
+          <h3>AI Prompting</h3>
+          <p>Membuat Prompt AI yang bagus</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-label reveal">— 03 / Kontak</div>
+      <h2 class="section-title reveal">Mari <em>Berkolaborasi</em></h2>
+      <p class="contact-sub reveal">Punya proyek menarik? Saya siap mendengarkan.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <p class="contact-label">Email</p>
+              <a href="mailto:alex@example.com">ekasatriakhoieudin@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <p class="contact-label">Lokasi</p>
+              <a href="https://maps.app.goo.gl/RZqKW6mT9yXfRK2W6">Sawangan, Magelang</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">💼</span>
+            <div>
+              <p class="contact-label">Instagram</p>
+              <a href="https://instagram.com/satriaa_kind">instagram.com/satriaa_kind</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🐙</span>
+            <div>
+              <p class="contact-label">GitHub</p>
+              <a href="https://github.com/satriaeka123">github.com/satriaeka123</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group">
+            <label>Nama</label>
+            <input type="text" placeholder="Nama Lengkap Anda" required />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="email@anda.com" required />
+          </div>
+          <div class="form-group">
+            <label>Pesan</label>
+            <textarea rows="5" placeholder="Ceritakan proyek Anda..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            Kirim Pesan <span class="btn-arrow">→</span>
+          </button>
+          <p class="form-success" id="formSuccess">✅ Pesan berhasil dikirim! Saya akan segera menghubungi Anda.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-logo">ES</p>
+        <p class="footer-copy">© 2026  
+          Eka. Dibuat dengan ❤️ di Magelang.</p>
+        <div class="footer-links">
+          <a href="https://github.com/satriaeka123">GitHub</a>
+          <a href="https://instagram.com/satriaa_kind">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
