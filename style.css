@@ -30,7 +30,7 @@ body {
   font-family: var(--font-body);
   font-weight: 300;
   overflow-x: hidden;
-  cursor: none;
+  cursor: default;
 }
 
 a { text-decoration: none; color: inherit; transition: color var(--transition); }
@@ -48,7 +48,7 @@ img { max-width: 100%; display: block; }
 /* ===========================
    CURSOR
 =========================== */
-.cursor, .cursor-follower {
+/* .cursor, .cursor-follower {
   position: fixed;
   border-radius: 50%;
   pointer-events: none;
@@ -67,7 +67,7 @@ img { max-width: 100%; display: block; }
   border: 1px solid rgba(232, 201, 126, 0.4);
   transform: translate(-50%, -50%);
   transition: transform 0.18s ease, width 0.2s, height 0.2s, border-color 0.2s;
-}
+} */
 
 .cursor-follower.hovered {
   width: 52px; height: 52px;

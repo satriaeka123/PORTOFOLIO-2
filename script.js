@@ -11,35 +11,16 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // ─── CUSTOM CURSOR ───────────────────────────
-  const cursor = document.getElementById('cursor');
-  const follower = document.getElementById('cursorFollower');
+const cursor = document.getElementById("cursor");
+const follower = document.getElementById("cursorFollower");
 
-  let mouseX = 0, mouseY = 0;
-  let followerX = 0, followerY = 0;
+document.addEventListener("mousemove", (e) => {
+  cursor.style.left = e.clientX + "px";
+  cursor.style.top = e.clientY + "px";
 
-  document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-    cursor.style.left = mouseX + 'px';
-    cursor.style.top  = mouseY + 'px';
-  });
-
-  function animateFollower() {
-    followerX += (mouseX - followerX) * 0.12;
-    followerY += (mouseY - followerY) * 0.12;
-    follower.style.left = followerX + 'px';
-    follower.style.top  = followerY + 'px';
-    requestAnimationFrame(animateFollower);
-  }
-  animateFollower();
-
-  const hoverTargets = document.querySelectorAll('a, button, .skill-card, .project-card, input, textarea');
-  hoverTargets.forEach(el => {
-    el.addEventListener('mouseenter', () => follower.classList.add('hovered'));
-    el.addEventListener('mouseleave', () => follower.classList.remove('hovered'));
-  });
-
+  follower.style.left = e.clientX + "px";
+  follower.style.top = e.clientY + "px";
+});
 
   // ─── NAVBAR SCROLL ───────────────────────────
   const navbar = document.getElementById('navbar');
